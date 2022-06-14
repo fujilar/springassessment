@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add To Do List</title>
+    <link rel="stylesheet" href="css\styles.css">
+
+</head>
+
+<body>
+
+      <!-- Nav Bar -->
+      <div th:insert="fragments/navbar.html :: navbar"></div>
+
+    <span>
+        <!--Start of form-->
+    <div>
+  
+      <!--start of changes-->
+      <div>       
+        <h1>New TODO item</h1>
+
+        <form id="newToDo" enctype="multipart/form-data">
+
+            <div class="mb-3">
+                <label for="headerInput" class="form-label">Header</label>
+                <input type="text" class="form-control" id="headerInput" placeholder="New TODO">
+            </div>
+
+            <div class="mb-3">
+                <label for="descriptionInput" class="form-label">Description</label>
+                <input type="text" class="form-control" id="descriptionInput"  placeholder="My TODO list">
+            </div>
+
+            <div class="mb-3">
+                <label for="dueInput" class="form-label">Target Date</label>
+                <input type="date" class="form-control" id="dueInput" placeholder="DD/MM/YYYY">
+            </div>
+
+            <p>
+                <button class="button" type="submit" class="btn btn-secondary btn">ADD</button>
+            </p>
+
+        
+            
+              
+        </form>
+        </div>
+    </div>
+    </span>
+    
+
+    
+    <script src="js/tableForm.js"></script>
+    <script src="js/tableListing.js"></script>
+
+</body>
+</html>
